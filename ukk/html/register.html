@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login">
+        <form method=POST action="register.php">
+
+            <h2 id='loginH2'>Register</h2>
+
+            <label for="username">Username</label><br />
+            <input type="text" id="username" class="inputUser" name="username" /><br />
+            <span class="checkInput"></span><br />
+
+            <label for="password">Password</label><br />
+            <input type="password" id="password" class="inputUser" name="password" /><br />
+            <span class="checkInput"></span><br />
+
+            <label for="confirmPassword">Confirm Password</label>&nbsp;<img src="./Icon/close.svg" class="identifyIcon" id="identifyIcon"><br />
+            <input type="password" id="confirmPassword" class="inputUser" name="confirmPassword" /><br />
+            <span class="checkInput"></span><br />
+
+            <input type="submit" value="Register" class="submitButton"><br /><br />
+
+            <a href='./' style='color:white;left:33%;position:relative;'>Login?</a>
+        </form>
+    </div>
+
+    <script>
+        let identifyIcon= document.getElementById('identifyIcon');
+        let password= document.getElementById('password');
+        let confirmPass= document.getElementById('confirmPassword');
+        password.oninput = () =>{
+            if(password.value==confirmPass.value){
+                identifyIcon.setAttribute('src','./Icon/check.svg');
+            }else{
+                identifyIcon.setAttribute('src','./Icon/close.svg');
+            }
+        }
+        confirmPass.oninput = () =>{
+            if(password.value===confirmPass.value){
+                identifyIcon.setAttribute('src','./Icon/check.svg');
+            }else{
+                identifyIcon.setAttribute('src','./Icon/close.svg');
+            }
+        }
+    </script>
+    
+</body>
+</html>
+

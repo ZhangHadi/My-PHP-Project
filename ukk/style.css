@@ -1,0 +1,79 @@
+body{
+    /* background: #131419; */
+    /* background : url('Picture/polos.jpeg') fixed;  hanya untuk light theme(cerah)*/ 
+    /* background-size: cover; */
+    background : url('Picture/lines_smooth_minimalism_141682_1920x1080.jpg') fixed;
+    background-size: cover;
+    color:rgba(255, 255,255, 1);
+}
+table{
+    margin: 0 auto;
+}
+#login{
+    width:200px;
+    padding:25px;
+    margin: 130px auto;
+    border:1px #03a9f4 solid;
+    box-shadow: -2px -2px 3px #03a9f4,2px 2px 18px #03a9f4;    
+}
+#loginH2{
+    text-align: center;
+    letter-spacing: 2px;
+}
+.submitButton{
+    position: relative;
+    text-align: center;
+    left:30%;
+    background:#03a9f4;
+    border:1px #03a9f4 solid;
+    width:60px;
+    padding:4px;
+    border-radius:20px;
+    cursor: pointer;
+}
+.submitButton:hover{
+    background:red;
+    border:1px #03a9f4 solid;
+}
+.inputUser{
+    background: transparent;
+    border:none;
+    border-bottom: 1px #03a9f4 solid;
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #03a9f4;
+    width:180px;
+    font-size: 15px;
+}
+.identifyIcon{
+    width:15px;   
+}
+#nav{
+    background: hsl(190, 100%, 50%);
+    position: fixed;
+    top:0;
+    left:0;
+    width:97.8%;
+    padding:15px;
+    text-align: right;
+}
+#nav a{
+    text-decoration: none;
+    color:white;
+    padding:16px;
+}
+#nav a:hover{
+    text-decoration: none;
+    color:white;
+    background-color: crimson;
+}
+table{
+    border:1px solid #03a9f4;
+    margin-bottom:20px;
+}
+td{
+    border:none;
+}
+#bayar td{
+    border:1px solid white;
+}

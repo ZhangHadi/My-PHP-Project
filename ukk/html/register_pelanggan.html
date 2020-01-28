@@ -1,0 +1,40 @@
+    <div id="login">
+        <form method=POST action="register_pelanggan.php">
+
+            <h2 id='loginH2'>Register</h2>
+
+            <label for="username">Username</label><br />
+            <input type="text" id="username" class="inputUser" name="username" /><br />
+
+            <label for="noHP">No Hp</label><br />
+            <input type="text" class="inputUser" id="noHP" name="noHP" /><br />
+
+            <label for="alamat">Alamat</label><br />
+            <input type="text" class="inputUser" id="alamat" name="alamat" /><br />
+            
+            <label>Jenis Kelamin</label><br />
+            <input type="radio" value=L name="jenis_kelamin" />Laki-Laki<br />
+            <input type="radio" value=P name="jenis_kelamin" />Perempuan<br /><br />
+
+            <label>Subscription</label><br />
+            <select name="expiry">
+                <option value="6_month">6 bulan = 3 Miliar</option>
+                <option value="1_year">1 Tahun = 5,5 Miliar</option>
+                <option value="2_year">2 Tahun = 10,5 Miliar</option>
+                <option value="5_year">5 Tahun = = 26 Miliar</option>
+            </select>
+            <br /><br />
+
+            <label for="password">Password</label><br />
+            <input type="password" id="password" class="inputUser" name="password" /><br />
+
+            <input type="submit" value="Register" class="submitButton"><br /><br />
+
+            <a href='./' style='color:white;left:33%;position:relative;'>Login?</a>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
+
